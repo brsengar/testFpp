@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewModel"
+                  type="com.ford.testfpp.health.viewmodel.VehicleHealthStatusCommonViewModel"/>
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:background="#141419"
+            android:layout_width="match_parent"
+            android:paddingBottom="20dp"
+            android:layout_height="wrap_content">
+
+        <ImageView
+                android:id="@+id/vehicle_health_status_row_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:customCompat="@{viewModel.imageDrawable}"
+                tools:src="@drawable/fpp_ic_vehicle_health_row_fuel"
+                app:layout_constraintTop_toTopOf="@+id/vehicle_health_status_row_title"
+                android:layout_marginStart="28dp"/>
+
+        <TextView
+                android:id="@+id/vehicle_health_status_row_title"
+                style="@style/FppCtaBase"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                app:layout_constraintStart_toEndOf="@+id/vehicle_health_status_row_icon"
+                android:text="@{viewModel.title}"
+                android:textAllCaps="true"
+                android:letterSpacing="0.05"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="20dp"
+                tools:text="FUEL"/>
+
+        <TextView
+                android:id="@+id/vehicle_health_status_row_description"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:gravity="center"
+                android:textColor="@color/fpp_50_alpha_white"
+                tools:text="22 Miles remaining"
+                android:text="@{viewModel.description}"
+                android:textSize="@dimen/fpp_text_size_10"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="20dp"
+                app:layout_constraintTop_toBottomOf="@+id/vehicle_health_status_row_title"
+                app:layout_constraintStart_toEndOf="@+id/vehicle_health_status_row_icon"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+                android:id="@+id/vehicle_health_status_row_status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="32dp"
+                android:text="@{viewModel.statusText}"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:textSize="@dimen/fpp_text_size_14"
+                app:layout_constraintTop_toTopOf="@+id/vehicle_health_status_row_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="10%"
+        />
+
+        <ImageView
+                android:id="@+id/vehicle_health_status_row_status_image"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                app:customCompat="@{viewModel.statusImgDrawable}"
+                app:layout_constraintBottom_toBottomOf="@+id/vehicle_health_status_row_description"
+                android:layout_marginTop="4dp"
+                android:layout_marginRight="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:src="@drawable/fpp_ic_vehicle_health_indicator_amber"
+        />
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

@@ -1,0 +1,776 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/fpp_page_gradient_background</item>
+        <item name="android:datePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="AppTheme" parent="BaseAppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="hintTextStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/disabled_cta_ford</item>
+    </style>
+
+    <style name="hintTextStyleWhite" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="textInputLayoutErrorText" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="TabBarTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorPrimaryDark">@color/status_bar_background_semi_transparent</item>
+        <item name="android:datePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+    </style>
+
+    <!--View Type Styles-->
+    <style name="BrandButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_height">@dimen/brand_button_height</item>
+    </style>
+
+    <style name="BrandCheckBox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="colorControlNormal">@color/checkbox_unchecked</item>
+        <item name="colorControlActivated">@color/checkbox_checked</item>
+    </style>
+
+    <style name="BrandVehicleDetailsButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:padding">0dp</item>
+    </style>
+
+    <style name="BrandSeekBar" parent="Base.Widget.AppCompat.SeekBar">
+    </style>
+    <!--Font Styles-->
+    <style name="BrandFontBody" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_body</item>
+        <item name="android:lineSpacingExtra">2dp</item>
+    </style>
+
+    <style name="BrandFontSmallHeader" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="FontXsmallBody" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_xsmall</item>
+        <item name="android:textColor">@color/disabled_cta_ford</item>
+    </style>
+
+    <style name="BrandFontSmallHeaderWithColor" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="BrandFontHeader" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_header</item>
+    </style>
+
+    <style name="BrandFontMediumHeader" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/font_header</item>
+    </style>
+
+    <style name="BrandFontSubcopy" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small_subcopy</item>
+    </style>
+
+    <style name="BrandFontHeaderRegular" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_header</item>
+    </style>
+
+    <style name="BrandFontSmallSubCopy" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/font_small_subcopy</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="BrandFontSmallSubHeader" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_small_subheader</item>
+    </style>
+
+    <style name="BrandFontSmallSubHeaderNormal" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small_subheader</item>
+    </style>
+
+    <style name="BrandFontHintBody" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/font_small_subheader</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lineSpacingExtra">4sp</item>
+        <item name="android:textColor">@color/disabled_cta_ford</item>
+    </style>
+
+    <style name="BrandFontBodyWithBoldText" parent="@style/BrandFontBody">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="BrandFontSmallBody" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="BrandFontSmallBodyLight" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="BrandFontSmallBodyMedium" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="BrandFontToolbar" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+    </style>
+
+    <style name="BrandPinPadButton">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">@dimen/fpp_pin_pad_button_size</item>
+        <item name="android:layout_height">@dimen/fpp_pin_pad_button_size</item>
+        <item name="android:layout_marginTop">@dimen/fpp_pin_pad_margin</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="LocationPreviewPanelOnly">
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="PinMySpotPanelTextOnly">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/text_black</item>
+    </style>
+
+    <style name="PinMySpotPanelEditTextOnly" parent="PinMySpotPanelTextOnly">
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="PinMySpotPanelTextViewOnly" parent="PinMySpotPanelTextOnly">
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- TODO: Move this to brand specific styles once styles for Lincoln is available-->
+
+    <style name="BrandPanelPrice" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+    </style>
+
+    <style name="BrandPanelName" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/font_body</item>
+    </style>
+
+    <style name="BrandFontDepartureTimesHeader" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/departure_times_item_time_text_size</item>
+    </style>
+
+    <style name="Theme.Transparent" parent="android:Theme">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="Theme.AppCompat">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="CarsharingRegistrationButton" parent="@android:style/TextAppearance">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_height">@dimen/brand_button_height</item>
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:textColor">@color/text_black</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="Theme.MyTheme.CustomPicker" parent="android:Theme.Material.Light.Dialog">
+        <item name="android:colorAccent">@color/cyan_dark_ford</item>
+        <item name="android:timePickerStyle">@style/Theme.MyTheme.TimePicker</item>
+        <item name="android:datePickerStyle">@style/Theme.MyTheme.DatePicker</item>
+    </style>
+
+    <style name="Theme.MyTheme.TimePicker" parent="android:Widget.Material.Light.TimePicker">
+        <item name="android:timePickerMode">clock</item>
+        <item name="android:headerBackground">@color/cyan_dark_ford</item>
+        <item name="android:numbersSelectorColor">@color/cyan_dark_ford</item>
+    </style>
+
+    <style name="Theme.MyTheme.DatePicker" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:headerBackground">@color/cyan_dark_ford</item>
+    </style>
+
+    <style name="MoveGarageTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabMode">scrollable</item>
+    </style>
+
+    <style name="AppTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:fontFamily">sans-serif-black</item>
+        <item name="android:textSize">@dimen/font_small_subheader</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="CarSharingDescription" parent="BrandFontSmallBody">
+        <item name="android:textSize">@dimen/font_body</item>
+    </style>
+
+    <style name="WalletTermsAndConditionExpandedTitle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/ford_antenna_bold</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_header</item>
+    </style>
+
+    <style name="WalletTermsAndConditionCollapsedTitle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_toolbar_title</item>
+    </style>
+
+    <style name="WalletExpiredCardDescription" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/font_small_subcopy</item>
+    </style>
+
+    <style name="AlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+    </style>
+
+    <style name="CarsharingTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorAccent">@color/cyan_dark_ford</item>
+    </style>
+
+    <style name="CtaButton" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/cyan_dark_ford</item>
+        <item name="android:textSize">@dimen/font_small_header</item>
+    </style>
+
+    <style name="PaakSetupButton">
+    </style>
+
+    <style name="PaakBluetoothControlText" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:textSize">@dimen/font_small_subheader</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:maxLines">2</item>
+    </style>
+
+    <!--FPP Styles-->
+
+    <style name="FppBaseTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/fpp_page_gradient_background</item>
+        <item name="android:datePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+        <item name="android:timePickerDialogTheme">@style/Theme.MyTheme.CustomPicker</item>
+        <item name="android:textColor">@color/fpp_white</item>
+        <item name="colorPrimary">@color/fpp_primary</item>
+    </style>
+
+    <style name="FppTheme" parent="FppBaseTheme">
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="FppToolbarTheme" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:fontFamily">@font/ford_antenna_cond_regular</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:background">@color/fpp_primary</item>
+        <item name="android:textColorPrimary">@color/fpp_white</item>
+        <item name="android:textColorSecondary">@color/fpp_white</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="FppToolbar.TitleText" parent="TextAppearance.Widget.AppCompat.Toolbar.Title">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FppPinPadButton">
+        <item name="android:textSize">@dimen/font_large</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:layout_width">@dimen/fpp_pin_pad_button_size</item>
+        <item name="android:layout_height">@dimen/fpp_pin_pad_button_size</item>
+        <item name="android:layout_marginTop">@dimen/fpp_pin_pad_margin</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:gravity">center</item>
+        <item name="fontFamily">@font/ford_antenna_light</item>
+        <item name="android:fontFamily">@font/ford_antenna_light</item>
+    </style>
+
+    <style name="FppTextStyleHeading1" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:letterSpacing">@dimen/fpp_header1_letter_spacing</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_extra_light</item>
+        <item name="android:textSize">@dimen/fpp_text_size_heading_1</item>
+    </style>
+
+    <style name="FppTextStyleHeading2" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/ford_antenna_cond_light</item>
+        <item name="android:letterSpacing">@dimen/fpp_header1_letter_spacing</item>
+        <item name="android:textSize">@dimen/fpp_text_size_heading_2</item>
+    </style>
+
+    <style name="FppTextStyleSubtitle" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/ford_antenna_bold</item>
+        <item name="android:textSize">@dimen/fpp_text_size_subtitle</item>
+    </style>
+
+    <style name="FppTextStyleBody" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_regular</item>
+        <item name="android:lineSpacingExtra">10sp</item>
+        <item name="android:textSize">@dimen/fpp_text_size_body</item>
+    </style>
+
+    <style name="FppTextStyleOverline" parent="@android:style/TextAppearance">
+        <item name="android:letterSpacing">@dimen/fpp_over_line_letter_spacing</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_medium</item>
+        <item name="android:textSize">@dimen/fpp_text_size_overline</item>
+    </style>
+
+    <style name="FppTextStyleCaption" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_caption</item>
+        <item name="android:textColor">@color/fpp_font_light_grey</item>
+    </style>
+
+    <style name="FppTextStyleLabel" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_label</item>
+        <item name="android:textColor">@color/fpp_font_dark_grey</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppTextStyleModal" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_model</item>
+    </style>
+
+    <style name="FppTextStyleUnknown2" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_label</item>
+        <item name="android:lineSpacingExtra">6sp</item>
+    </style>
+
+    <style name="FppTextStyleSettingsTitle" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_settings_title</item>
+        <item name="android:letterSpacing">@dimen/fpp_settings_header_letter_spacing</item>
+    </style>
+
+    <style name="FppButton" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textSize">@dimen/fpp_button_text</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_medium</item>
+        <item name="android:letterSpacing">@dimen/fpp_button_letter_spacing</item>
+    </style>
+
+    <style name="FppBaseButton" parent="Base.Widget.AppCompat.Button">
+        <item name="android:clickable">true</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:textAppearance">@style/FppButton</item>
+        <item name="android:textColor">@color/fpp_button_text_color_enabled_selector</item>
+    </style>
+
+    <style name="FppPrimaryButton" parent="FppBaseButton">
+        <item name="android:background">@drawable/fpp_button_ripple_primary</item>
+    </style>
+
+    <style name="FppPrimaryButtonEndPoint" parent="FppBaseButton">
+        <item name="android:background">@drawable/fpp_button_ripple_primary_dark</item>
+    </style>
+
+    <style name="FppSecondaryButton" parent="FppBaseButton">
+        <item name="android:background">@drawable/fpp_button_ripple_secondary</item>
+    </style>
+
+    <style name="FppSecondaryButtonEndPoint" parent="FppBaseButton">
+        <item name="android:background">@drawable/fpp_button_ripple_secondary_dark</item>
+    </style>
+
+    <style name="FppTertiaryButton" parent="FppBaseButton">
+        <item name="android:background">@drawable/fpp_button_ripple_tertiary</item>
+        <item name="android:textColor">@color/fpp_button_tertiary_text_color</item>
+    </style>
+
+    <style name="FppTheme.Button.Primary" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/fpp_button_primary</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FppTheme.Button.Dark" parent="Widget.AppCompat.Button.Colored">
+        <item name="colorButtonNormal">@color/fpp_button_primary_dark</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FppCheckBox" parent="Base.Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/fpp_selector_check_box_button</item>
+    </style>
+
+    <style name="FppCheckboxText" parent="@style/FppTextStyleBody">
+        <item name="android:textColorLink">@color/fpp_bright_sky_blue</item>
+        <item name="android:textColorHighlight">@android:color/transparent</item>
+    </style>
+
+    <style name="FppTheme.EditText.Default" parent="Widget.AppCompat.EditText">
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="android:background">@drawable/fpp_shape_text_background_rounded_rectangle</item>
+        <item name="android:minHeight">@dimen/fpp_input_field_height</item>
+        <item name="android:padding">@dimen/fpp_standard_page_margin_small</item>
+        <item name="android:textAppearance">@style/FppTextStyleBody</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="FppRadioButton" parent="Base.Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/fpp_selector_radio_button</item>
+    </style>
+
+    <style name="FppSwitch" parent="Base.TextAppearance.AppCompat.Widget.Switch">
+        <item name="android:thumb">@drawable/fpp_switch_selector</item>
+        <item name="track">@drawable/fpp_switch_track</item>
+    </style>
+
+    <style name="FppDivider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#32323c</item>
+    </style>
+
+
+    <!--PLEASE DO NOT REMOVE THIS COMMENT, IT IS TEMPORARY AND SHOULD BE REMOVED WHEN ALL
+        THE STYLES MENTIONED BELOW WILL HAVE A PROPER NAME -->
+    <!--Please put all unknown style names from the designs below-->
+
+    <style name="FppTextStyleUnknown1" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_settings_heading</item>
+        <item name="android:letterSpacing">@dimen/fpp_heading_1_letter_spacing</item>
+    </style>
+
+    <style name="FppTextStyleUnknown75" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/ford_antenna_cond_light</item>
+        <item name="android:letterSpacing">0.11</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:lineSpacingExtra">12sp</item>
+        <item name="android:textColor">@color/fpp_75_alpha_white</item>
+    </style>
+
+    <!--New FPP styles-->
+
+    <style name="FppHeroBase" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_extra_light</item>
+        <item name="android:textSize">@dimen/fpp_text_size_70</item>
+    </style>
+
+    <style name="FppHeroWhite" parent="FppHeroBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH1Base" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_light</item>
+        <item name="android:textSize">@dimen/fpp_text_size_28</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppH1White" parent="FppH1Base">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH2Base" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_light</item>
+        <item name="android:textSize">@dimen/fpp_text_size_24</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppH2White" parent="FppH2Base">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH3Base" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_16</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppH3White" parent="FppH3Base">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH4BoldBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_bold</item>
+        <item name="android:textSize">@dimen/fpp_text_size_16</item>
+    </style>
+
+    <style name="FppH4BoldBodyBase" parent="FppH4BoldBase">
+        <item name="android:lineSpacingExtra">24sp</item>
+    </style>
+
+    <style name="FppH4BoldBodyLightGrey" parent="FppH4BoldBodyBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH4BoldBodyBlue" parent="FppH4BoldBodyBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH4BoldBodyWhite" parent="FppH4BoldBodyBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH4BoldLightGrey" parent="FppH4BoldBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH4BoldBlue" parent="FppH4BoldBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH4BoldWhite" parent="FppH4BoldBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH4RegularBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_14</item>
+    </style>
+
+    <style name="FppH4RegularBodyBase" parent="FppH4RegularBase">
+        <item name="android:lineSpacingExtra">24sp</item>
+    </style>
+
+    <style name="FppH4RegularBodyLightGrey" parent="FppH4RegularBodyBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH4RegularBodyBlue" parent="FppH4RegularBodyBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH4RegularBodyWhite" parent="FppH4RegularBodyBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH4RegularLightGrey" parent="FppH4RegularBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH4RegularBlue" parent="FppH4RegularBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH4RegularWhite" parent="FppH4RegularBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH5BoldBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_bold</item>
+        <item name="android:textSize">@dimen/fpp_text_size_14</item>
+    </style>
+
+    <style name="FppH5BoldBodyBase" parent="FppH5BoldBase">
+        <item name="android:lineSpacingExtra">21sp</item>
+    </style>
+
+    <style name="FppH5BoldBodyLightGrey" parent="FppH5BoldBodyBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH5BoldBodyBlue" parent="FppH5BoldBodyBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH5BoldBodyWhite" parent="FppH5BoldBodyBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH5BoldLightGrey" parent="FppH5BoldBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH5BoldBlue" parent="FppH5BoldBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH5BoldWhite" parent="FppH5BoldBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH5RegularBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_14</item>
+    </style>
+
+    <style name="FppH5RegularBodyBase" parent="FppH5RegularBase">
+        <item name="android:lineSpacingExtra">21sp</item>
+    </style>
+
+    <style name="FppH5RegularBodyLightGrey" parent="FppH5RegularBodyBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH5RegularBodyBlue" parent="FppH5RegularBodyBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH5RegularBodyWhite" parent="FppH5RegularBodyBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH5RegularLightGrey" parent="FppH5RegularBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH5RegularBlue" parent="FppH5RegularBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH5RegularWhite" parent="FppH5RegularBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH6BoldBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_bold</item>
+        <item name="android:textSize">@dimen/fpp_text_size_12</item>
+    </style>
+
+    <style name="FppH6BoldLightGrey" parent="FppH6BoldBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH6BoldBlue" parent="FppH6BoldBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH6BoldWhite" parent="FppH6BoldBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH6RegularBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_12</item>
+    </style>
+
+    <style name="FppH6RegularLightGrey" parent="FppH6RegularBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH6RegularBlue" parent="FppH6RegularBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH6RegularWhite" parent="FppH6RegularBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH7BoldBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_bold</item>
+        <item name="android:textSize">@dimen/fpp_text_size_10</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppH7BoldLightGrey" parent="FppH7BoldBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH7BoldBlue" parent="FppH7BoldBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH7BoldWhite" parent="FppH7BoldBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppH7RegularBase" parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@android @font/ford_roboto_regular</item>
+        <item name="android:textSize">@dimen/fpp_text_size_10</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppH7RegularLightGrey" parent="FppH7RegularBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppH7RegularBlue" parent="FppH7RegularBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppH7RegularWhite" parent="FppH7RegularBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+    <style name="FppCtaBase" parent="@android:style/TextAppearance">
+        <item name="android:textStyle">normal</item>
+        <item name="android:fontFamily">@font/ford_antenna_cond_medium</item>
+        <item name="android:textSize">@dimen/fpp_text_size_14</item>
+        <item name="android:letterSpacing">@dimen/fpp_label_letter_spacing</item>
+    </style>
+
+    <style name="FppCtaLightGrey" parent="FppCtaBase">
+        <item name="android:textColor">@color/fpp_pro_40</item>
+    </style>
+
+    <style name="FppCtaBlue" parent="FppCtaBase">
+        <item name="android:textColor">@color/fpp_pro_blue</item>
+    </style>
+
+    <style name="FppCtaWhite" parent="FppCtaBase">
+        <item name="android:textColor">@color/fpp_white</item>
+    </style>
+
+</resources>

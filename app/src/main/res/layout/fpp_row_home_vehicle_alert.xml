@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="viewModel"
+                  type="com.ford.testfpp.home.viewmodel.HomeItemVehicleAlertViewModel" />
+    </data>
+
+    <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/fpp_home_vehicle_alert_background"
+            android:paddingTop="32dp"
+            android:paddingBottom="32dp"
+            android:elevation="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_height="match_parent">
+
+        <TextView
+                android:id="@+id/home_vehicle_alert_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:text="@{viewModel.title}"
+                android:drawablePadding="10dp"
+                tools:text="oil level low"
+                android:drawableLeft="@drawable/fpp_ic_warning_amber"
+                android:letterSpacing="0.1"
+                style="@style/FppH3White"
+                android:textAllCaps="true"/>
+
+        <!--android:drawableLeft="@{viewModel.alertIcon}"-->
+
+        <TextView
+                android:id="@+id/home_vehicle_alert_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/home_vehicle_alert_title"
+                android:text="@{viewModel.description}"
+                tools:text="2019 Transit: You have an average of 5,000 miles remaing before your Oil health could cause problems…"
+                android:layout_marginTop="9dp"
+                android:letterSpacing="0.1"
+                android:fontFamily="@font/ford_antenna_regular"
+                android:textSize="10sp"
+                android:lineHeight="6sp"
+                android:textColor="@color/fpp_dark_gray"/>
+
+    </android.support.constraint.ConstraintLayout>
+</layout>

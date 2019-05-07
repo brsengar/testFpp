@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:bind="http://schemas.android.com/tools">
+
+    <data>
+        <variable name="alertViewModel"
+                  type="com.ford.testfpp.home.viewmodel.HomeItemVehicleAlertViewModel"/>
+
+        <variable name="vehicleViewModel"
+                  type="com.ford.testfpp.home.viewmodel.HomeVehicleLocationViewModel"/>
+
+        <variable name="statusViewModel"
+                  type="com.ford.testfpp.home.viewmodel.HomeItemStatusViewModel"/>
+    </data>
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:background="#141419"
+                android:layout_height="match_parent">
+
+            <include
+                    android:id="@+id/home_upper_container"
+                    layout="@layout/fpp_layout_home_upper_container"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    bind:data="{alertViewModel}"
+                    app:layout_constraintLeft_toLeftOf="parent"/>
+
+            <include layout="@layout/fpp_layout_home_vehicle_location"
+                     android:layout_width="0dp"
+                     android:layout_height="wrap_content"
+                     bind:data="{vehicleViewModel}"
+                     android:id="@+id/home_vehicle_location"
+                     app:layout_constraintTop_toBottomOf="@+id/home_upper_container"
+                     app:layout_constraintStart_toStartOf="parent"
+                     app:layout_constraintEnd_toEndOf="parent"/>
+
+            <View
+                    android:id="@+id/fpp_home_horizontal_divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_vehicle_location"
+                    android:background="#000000"/>
+
+            <LinearLayout
+                    android:id="@+id/fpp_home_vehicle_status_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fpp_home_horizontal_divider"
+                    android:orientation="horizontal">
+                <include layout="@layout/fpp_row_half_vehicle_item_status"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/home_row_status_1"
+                         bind:data="{statusViewModel}"
+                         android:layout_weight="1"/>
+
+                <View
+                        android:id="@+id/fpp_home_vertical_divider"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="#000000"/>
+
+                <include layout="@layout/fpp_row_half_vehicle_item_status"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content"
+                         android:id="@+id/home_row_status_2"
+                         bind:data="{statusViewModel}"
+                         android:layout_weight="1"
+                />
+
+            </LinearLayout>
+
+            <View
+                    android:id="@+id/fpp_home_horizontal_divider_2"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/fpp_home_vehicle_status_layout"
+                    android:background="#000000"/>
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</layout>

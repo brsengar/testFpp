@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF0000</color>
+    <color name="colorPrimaryDark">#00FF00</color>
+    <color name="colorAccent">#404553</color>
+    <color name="colorActiveButton">#003478</color>
+    <color name="colorInactiveButton">#BBBABA</color>
+    <color name="charcoal_grey">#404553</color>
+    <color name="shadow">#12000000</color>
+    <color name="divider">#c0c0c0</color>
+    <color name="grey_divider">#dbdbdb</color>
+    <color name="text_black">#333333</color>
+    <color name="text_grey">#707678</color>
+    <color name="line_dividers">#c0c0c0</color>
+    <color name="text_blue">#0272b9</color>
+    <color name="semitransparent">#88000000</color>
+    <color name="checkbox_checked">#0077c8</color>
+    <color name="checkbox_unchecked">#010101</color>
+    <color name="alert_urgent">#d00c1b</color>
+    <color name="light_gray">#f6f6f6</color>
+    <color name="transparent">#00000000</color>
+    <color name="white">@android:color/white</color>
+    <color name="cyan_dark_ford">#0276b3</color>
+    <color name="alert_moderate_ford">#e58b00</color>
+    <color name="rating_progress_colour">#006aac</color>
+    <color name="cyan_light_ford">#00a9e0</color>
+    <color name="rating_details">#f1b434</color>
+    <color name="common_success_green">#12b664</color>
+    <color name="camera_corners_rectangle">#70ff00</color>
+    <color name="high_availability">#108648</color>
+    <color name="low_availability">#cd4b01</color>
+    <color name="disabled_cta_ford">#767676</color>
+    <color name="prussian_blue">#012e51</color>
+    <color name="transparent_black">#80000000</color>
+    <color name="tristate_disable">#AAAAAA</color>
+    <color name="dark_primary_blue">#002f6c</color>
+    <color name="light_sky_blue">#c4d7e5</color>
+    <color name="air_quality_index_level_good">#00B564</color>
+    <color name="air_quality_index_level_no_data">#DBDBDB</color>
+    <color name="air_quality_index_level_lightly_polluted">#FFBB1B</color>
+    <color name="air_quality_index_level_moderately_polluted">#D0021B</color>
+    <color name="air_quality_index_level_severely_polluted">#7E0023</color>
+    <color name="subscription_divider">#dedede</color>
+    <color name="blue_enabled_cta">#008099</color>
+    <color name="weather_aqi_seperator_color">#b8b8b8</color>
+    <color name="active_subscription_expiry_color">#d00c1b</color>
+    <color name="active_subscription_pending_color">#e58b00</color>
+    <color name="aar_index_level_excellent">#00e400</color>
+    <color name="aar_index_level_good">#ffff00</color>
+    <color name="aar_index_level_no_data">#eaeaea</color>
+    <color name="aar_index_level_mild_polluted">#ff7e00</color>
+    <color name="aar_index_level_moderately_polluted">#ff0000</color>
+    <color name="aar_index_level_heavy_polluted">#99004c</color>
+    <color name="aar_index_level_severely_polluted">#7e0023</color>
+    <color name="intent_chooser_item_text">#AA000000</color>
+    <color name="intent_chooser_activity_background_view">#44000000</color>
+    <color name="status_bar_background_semi_transparent">#66000000</color>
+    <color name="driving_efficiency_increase_value_color">#1db954</color>
+
+    <!--fpp colors for gradients-->
+    <color name="fpp_mid_gray_for_gradient_charcoal">#404553</color>
+    <color name="fpp_mid_gray_for_gradient_charcoal_light">#293041</color>
+    <color name="fpp_dark_gray_for_gradient">#282832</color>
+    <color name="fpp_dark_gray_for_gradient_light">#141414</color>
+    <color name="fpp_light_gray_for_gradient_start">#686f80</color>
+    <color name="fpp_light_gray_for_gradient_end">#52596a</color>
+    <color name="fpp_black">#000000</color>
+
+    <color name="fpp_account_settings_list_item_bg">#42495B</color>
+    <color name="fpp_account_settings_list_item_separator">#32323c</color>
+
+    <color name="fpp_primary">#686f80</color>
+    <color name="fpp_active_blue">#00A0FA</color>
+    <color name="fpp_cool_grey">#C8C8C8</color>
+    <color name="fpp_mid_grey">#646464</color>
+
+    <color name="fpp_button_solid_gray">#2d3241</color>
+    <color name="fpp_button_border_gray">#1b202c</color>
+    <color name="fpp_button_solid_dark_gray">#121218</color>
+    <color name="fpp_button_ripple_gray">#7CFFFFFF</color>
+    <color name="fpp_button_primary_gradient_top">#5B5E6B</color>
+    <color name="fpp_button_secondary_border_top">#1b202c</color>
+    <color name="fpp_button_secondary_border_bottom">#2AFFFFFF</color>
+
+    <color name="fpp_font_light_grey">#C8C8C8</color>
+    <color name="fpp_font_dark_grey">#9b9b9b</color>
+
+    <color name="fpp_brand_button_text_color">#404553</color>
+    <color name="fpp_bright_sky_blue">#00c8ff</color>
+    <color name="fpp_50_alpha_black">#80000000</color>
+    <color name="fpp_button_primary">#2d3241</color>
+    <color name="fpp_50_alpha_button_primary">#802d3241</color>
+    <color name="fpp_button_primary_dark">#121218</color>
+    <color name="fpp_button_tertiary_text_color">#a6d3ff</color>
+    <color name="fpp_mid_gray">#969696</color>
+    <color name="fpp_dark_gray">#646464</color>
+    <color name="fpp_toast_gray">#ff293041</color>
+    <color name="fpp_slate_gray">#5f6573</color>
+    <color name="fpp_tangerine_orange">#f5a623</color>
+    <color name="fpp_button_shadow_light">#19c8c8ff</color>
+    <color name="fpp_button_shadow_dark">#80000000</color>
+
+
+    <!--PLEASE DO NOT REMOVE THIS COMMENT, IT IS TEMPORARY AND SHOULD BE REMOVED WHEN ALL
+        THE COLOURS MENTIONED BELOW WILL HAVE A PROPER NAME -->
+    <!--Please put all unknown colour names from the designs below-->
+
+    <color name="fpp_undefined_unit_of_measurement_title_background_gradient_start">#404553</color>
+    <color name="fpp_undefined_unit_of_measurement_title_background_gradient_end">#293041</color>
+    <color name="fpp_undefined_unit_of_measurement_row_background">#41495d</color>
+    <color name="fpp_undefined_unit_of_measurement_divider">#32323c</color>
+    <color name="fpp_50_alpha_white">#B3ffffff</color>
+    <color name="fpp_75_alpha_white">#BFffffff</color>
+
+    <!-- Colours NEW DESIGN -->
+
+    <color name="fpp_white">#FFFFFF</color>
+    <color name="fpp_pro_black">#141419</color>
+    <color name="fpp_pro_90">#28282d</color>
+    <color name="fpp_pro_80">#46464b</color>
+    <color name="fpp_pro_70">#5a5a5f</color>
+    <color name="fpp_pro_60">#6a6b71</color>
+    <color name="fpp_pro_40">#a6a9b2</color>
+    <color name="fpp_alert_red">#fa0000</color>
+    <color name="fpp_alert_amber">#fa9600</color>
+    <color name="fpp_pro_blue">#00c8ff</color>
+    <color name="fpp_alert_green">#00dc96</color>
+</resources>

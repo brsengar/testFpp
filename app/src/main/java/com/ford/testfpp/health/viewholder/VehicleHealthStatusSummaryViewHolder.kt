@@ -1,0 +1,5 @@
+package com.ford.testfpp.health.viewholder
+
+import com.ford.testfpp.databinding.RowVehicleHealthStatusSummaryBinding
+
+class VehicleHealthStatusSummaryViewHolder(val binding: RowVehicleHealthStatusSummaryBinding) : VehicleHealthStatusViewHolder(binding)
